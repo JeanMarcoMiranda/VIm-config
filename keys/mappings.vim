@@ -1,6 +1,6 @@
 " Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+"inoremap <expr> <c-j> ("\<C-n>")
+";inoremap <expr> <c-k> ("\<C-p>")
 
 " alt + (j, k) para modificar el tamaño de la ventana de manera vertical
 nnoremap <M-j>    :resize -2<CR>
@@ -41,5 +41,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+"nnoremap <Leader>o o<Esc>^Da
+"nnoremap <Leader>O O<Esc>^Da
+
+nmap <Leader>p :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc

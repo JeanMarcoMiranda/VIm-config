@@ -1,5 +1,28 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "typescript.tsx",
+    "javascript.jsx",
+    "javascriptreact",
+    "typescriptreact",
+    "typescript"
+  ],
+  "coc.preferences.formatOnType": true,
+
+  // Html
+  "html.enable": true,
+  "html.format.enable": true,
+  "html.autoClosingTags": true,
+
+  // Tsserver
+  "tsserver.formatOnType": true,
 
   // python config
   "python.linting.enabled": true,
@@ -9,6 +32,37 @@
   [
     "UltiSnips",
     "~/.config/nvim/utils/snips"
-  ]
+  ],
+  
+  // explorer config
+  "explorer.width": 35,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.quitOnOpen": true,
+  "explorer.icon.enableNerdfont": true,
+  //"explorer.icon.enableVimDevicons": true,
+  "explorer.icon.customIcons": {
+    "icons": {
+    },
+    "extensions": {
+    },
+    "filenames": {},
+    "dirnames": {
+    },
+    "patternMatches": {
+    },
+    "dirPatternMatches": {}
+  },
+  "explorer.file.column.clip.cut": "",
+  "explorer.file.column.clip.copy": "",
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
 
+  // Eslint
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+
+  // Prettier
 }

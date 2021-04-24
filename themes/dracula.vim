@@ -4,8 +4,4 @@ if (has("termguicolors"))
   hi LineNr ctermbg=NONE guibg=NONE
 endif
 
-
-hi Comment cterm=italic
-syntax on
-
 colorscheme dracula
