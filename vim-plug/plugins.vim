@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'sheerun/vim-polyglot'
   
   " Explorador de archivos
-  Plug 'scrooloose/nerdtree'
+  "Plug 'scrooloose/nerdtree'
 
   " Autocompletado para llaves, parentesis y corchetes
   Plug 'jiangmiao/auto-pairs'
@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Iconos
   Plug 'ryanoasis/vim-devicons' " Pone iconos en NERDTree - Requiere tener instalada alguna fuente de Nerd Fonts
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Colores en los iconos
+  Plug 'kyazdani42/nvim-web-devicons'
   Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " Indentacion
@@ -34,7 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
   " Discord Presence
-  "Plug 'vimsence/vimsence'
+  Plug 'vimsence/vimsence'
 
   " Integracion de Vim y Tmux
   Plug 'christoomey/vim-tmux-navigator'
@@ -81,5 +82,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Context
   Plug 'wellle/context.vim'
+
+  " Nvim dashboard - starter screen
+  Plug 'glepnir/dashboard-nvim'
 
 call plug#end()

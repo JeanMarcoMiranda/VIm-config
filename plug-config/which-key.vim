@@ -26,13 +26,11 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 let g:which_key_map['n'] = [ ':CocCommand explorer'       , 'explorer' ]
-let g:which_key_map['f'] = [ ':Telescope find_files'      , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 "let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 "let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
 "let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " t for terminal
 let g:which_key_map.t = {
@@ -43,9 +41,29 @@ let g:which_key_map.t = {
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],
       \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ 't' : [':FloatermToggle'                                , 'terminal+'],
       \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ 'c' : [':Telescope colorscheme'                         , 'change_colorscheme'],
+      \ 'p' : [':Telescope builtin'                             , 'telescope_pickers'],
+      \ }
+
+" f is for find
+let g:which_key_map.f = {
+      \ 'name' : '+find',
+      \ 'f' : [':Telescope find_files'          , 'files'],
+      \ 'd' : [':Telescope file_browser'        , 'directory'],
+      \ 'a' : [':Telescope greep_string'        , 'word inside file'],
+      \ 'b' : [':Telescope buffers'             , 'buffers'],
+      \ 'g' : [':Telescope live_grep'           , 'word in files'],
+      \ 'h' : [':Telescope oldfiles'            , 'history'],
+      \ }
+
+let g:which_key_map.g = {
+      \ 'name' : '+git_search',
+      \ 'c' : [':Telescope git_commits'         , 'commits'],
+      \ 'b' : [':Telescope git_branches'        , 'branches'],
+      \ 's' : [':Telescope git_status'          , 'status'],
       \ }
 
 " s is for search
@@ -74,7 +92,6 @@ let g:which_key_map.s = {
       \ 'T' : [':BTags'        , 'buffer tags'],
       \ 'w' : [':Windows'      , 'search windows'],
       \ 'y' : [':Filetypes'    , 'file types'],
-      \ 'z' : [':FZF'          , 'FZF'],
       \ }
 
 " Register which key map

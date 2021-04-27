@@ -21,7 +21,6 @@ set updatetime=300 " Faster completion
 set clipboard=unnamedplus " Permite que el clipboard de vim interactue con todas las aplicaciones
 set relativenumber " indica los numeros de linea hacia arriba y abajo desde la linea en la que nos ubicamos actualmente
 set t_Co=256 " Soporte para 256Colors
-set background=light
 syntax on
 
 " Indentation
@@ -45,3 +44,4 @@ if !has('nvim')
   let &t_ZH="\e[3m"
   let &t_ZR="\e[23m"
 endif
+

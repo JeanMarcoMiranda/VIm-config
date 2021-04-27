@@ -44,10 +44,14 @@ nnoremap <C-l> <C-w>l
 "nnoremap <Leader>o o<Esc>^Da
 "nnoremap <Leader>O O<Esc>^Da
 
-nmap <Leader>p :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-    if !exists("*synstack")
-        return
-    endif
-    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
+
+
+" -- Code to get the corresponding group of all keywords in the editor, usefull
+" - to alter and customize the current theme
+" nnoremap <Leader>p :call <SID>SynStack()<CR>
+" function! <SID>SynStack()
+"    if !exists("*synstack")
+"        return
+"    endif
+"    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+"endfunc
