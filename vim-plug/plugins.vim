@@ -35,7 +35,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
   " Discord Presence
-  Plug 'vimsence/vimsence'
+  Plug 'andweeb/presence.nvim'
+  Plug 'LeonardSSH/coc-discord-rpc', {'do': 'yarn install --frozen-lockfile'}
 
   " Integracion de Vim y Tmux
   Plug 'christoomey/vim-tmux-navigator'

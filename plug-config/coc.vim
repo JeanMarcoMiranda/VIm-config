@@ -169,7 +169,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " ========== MY EXTENSIONS ============
 " == Intalled
-let g:coc_global_extensions = ['coc-tsserver']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-discord-rpc', 'coc-explorer']
 
 " Explorer config
 function! s:explore() " Siempre abrir coc explorer como explorador por defecto

@@ -62,7 +62,14 @@
 
   // Eslint
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
   // Prettier
+
+  //coc-discord-presence
+  "rpc.id": "768090036633206815",
+  "rpc.enabled": true,
+  "rpc.ignoreWorkspaces": [],
+  "rpc.checkIdle": true
+
 }
